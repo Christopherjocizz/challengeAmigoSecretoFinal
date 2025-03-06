@@ -22,6 +22,15 @@ function agregarAmigo (){
 agregarAmigo.value = "";
 //Actualizar el array en el index.html y ver los nombres que se agregan en el prompt
 actualizarLista()
-//Función para actualizar la lista de amigos
 
+}
+//Función para actualizar la lista de amigos
+function actualizarLista (){
+    let listaAmigos = document.getElementById("listaAmigos");
+//Limpiar la lista existente
+    listaAmigos.innerHTML = "";
+//Recorrer el array
+for (let amigo of amigos){
+
+}
 }
