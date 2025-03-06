@@ -22,7 +22,6 @@ function agregarAmigo (){
 agregarAmigo.value = "";
 //Actualizar el array en el index.html y ver los nombres que se agregan en el prompt
 actualizarLista()
-
 }
 //Función para actualizar la lista de amigos
 function actualizarLista (){
@@ -31,6 +30,17 @@ function actualizarLista (){
     listaAmigos.innerHTML = "";
 //Recorrer el array
 for (let amigo of amigos){
-
+    let li = document.createElement("li");
+    li.textContent = amigo;
+    lista.appendChild(li);
 }
+}
+//Función para sortear los amigos
+function sortearAmigo(){
+//Validar que haya amigos disponibles
+if (amigos.length === 0){//Se comprueba que el array no este vacio
+    alert ("No ingreso ningun nombre. Por favor ingrese al menos 2 nombres para el sorteo ");
+    return;
+}
+//Gererar un índice aleatorio
 }
